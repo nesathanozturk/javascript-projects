@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #111827;
+}
+
+.title {
+  color: #fee6e3;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.btn-box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-box .addBtn {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-box .addBtn:after {
+  background-color: #fff;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.btn-box .addBtn:hover:after {
+  transform: translate(0, 0);
+}
+
+.btn-box .addBtn:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.btn-box .addBtn:hover {
+  outline: 0;
+}
+
+.note-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note-container .note {
+  background-color: #fee6e3;
+  width: 350px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.note-container .note .note-header {
+  padding: 7px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #bbb;
+}
+
+.note-container .note .note-header .icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.note-container .editText {
+  padding: 20px;
+}
+
+.note-container textarea {
+  background-color: #fee6e3;
+  width: 100%;
+  padding: 10px;
+  height: 250px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btn-box .addBtn {
+    padding: 0 40px;
+  }
+}

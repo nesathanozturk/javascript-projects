@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c376.9C83.604%2c379.107%2c169.219%2c416.115%2c245.757%2c382.405C326.175%2c346.985%2c384.137%2c272.03%2c420.12%2c191.862C455.972%2c111.986%2c467.819%2c20.687%2c446.193%2c-64.153C425.62%2c-144.86%2c351.373%2c-194.924%2c304.055%2c-263.465C249.353%2c-342.702%2c234.466%2c-459.624%2c146.362%2c-498.464C58.091%2c-537.378%2c-45.796%2c-495.509%2c-134.073%2c-456.61C-215.088%2c-420.911%2c-281.66%2c-360.506%2c-331.996%2c-287.676C-378.707%2c-220.09%2c-407.404%2c-140.948%2c-409.012%2c-58.807C-410.51%2c17.734%2c-369.114%2c84.503%2c-340.671%2c155.579C-310.637%2c230.633%2c-305.348%2c325.606%2c-237.558%2c369.647C-169.751%2c413.699%2c-80.832%2c374.766%2c0%2c376.9' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 1162.0259999999998C1554.383 1167.309 1661.378 1116.095 1760.113 1058.105 1862.127 998.1890000000001 1979.537 935.682 2016.644 823.344 2053.274 712.448 1976 600.424 1948.807 486.845 1924.489 385.276 1940.694 263.758 1865.35 191.43200000000002 1790.5520000000001 119.63 1669.742 144.885 1568.637 121.904 1475.221 100.67099999999999 1386.946 39.849000000000046 1293.621 61.48000000000002 1198.766 83.46499999999997 1135.401 167.36700000000002 1068.255 237.88099999999997 997.95 311.71299999999997 906.527 380.313 893.706 481.455 880.919 582.333 960.617 667.144 1002.072 759.995 1043.946 853.7850000000001 1062.6779999999999 959.928 1138.342 1029.3899999999999 1220.931 1105.2089999999998 1328.005 1156.854 1440 1162.0259999999998' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")
+    no-repeat center center/cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.container .todo-box input {
+  width: 80%;
+  height: 3rem;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.container .todo-box .addBtn {
+  color: #fff;
+  width: 5rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.container .todo-box .addBtn {
+  background: #0c47d0;
+}
+
+.container .todo-box .addBtn:hover {
+  background: #0a3aa8;
+}
+
+.container #todos {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.container .todo-box ul li {
+  background-color: #a71dc2;
+  color: #fff;
+  width: 26.9rem;
+  height: 3rem;
+  margin: 0.5rem auto;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .todo-box ul .removeBtn {
+  background: none;
+  color: #fff;
+  width: 1.5rem;
+  height: 2rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.container .todo-last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .todo-last .clearBtn {
+  background: #dc1010;
+  color: #fff;
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.container .todo-last .clearBtn:hover {
+  background: rgb(181, 7, 7);
+}
+
+.container ul .noTodo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  margin: 1rem auto;
+}

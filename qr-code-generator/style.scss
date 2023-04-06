@@ -1,0 +1,75 @@
+@import "_variables";
+@import "_reset";
+@import "_mixin";
+
+body {
+    @include align;
+    background: $bg-color;
+    font-family: $font;
+    text-align: center;
+}
+
+.form {
+    width: 30rem;
+    padding: 1rem;
+    background: $form;
+
+    h1 {
+        color: $text-color;
+        background: darkorange;
+        margin: -1rem -1rem 1rem -1rem;
+        padding: 1.25rem 0;
+        font-weight: 300;
+        font-size: 1.563rem;
+    }
+    input[type="text"], 
+    input[type="url"] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 4%;
+        background: $form;
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        font-size: 1.063rem;
+        color: $text-color;
+    }
+    input[type="text"]:focus, 
+    input[type="url"]:focus {
+        box-shadow: 0 0 5px $text-color;
+        padding: 4%;
+        border: 1px solid $text-color;
+    }
+
+    button {
+        color: $text-color;
+        background-color: orange;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 11.25rem;
+        margin: 0 auto;
+        padding: 3%;
+        border: none;
+        border-radius: 3px;
+        font-size: 1.063rem;
+        cursor: pointer;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        font-weight: 600;
+    }
+    
+    button:hover {
+        background: darkblue;
+        color: #fff;
+    }
+}
+
+.container {
+    display: none;
+}
+
+.qrcode {
+    padding: 1rem;
+    margin-bottom: 1.875rem;
+}
