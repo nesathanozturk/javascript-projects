@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #4c3398;
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion {
+  background: #fff;
+  max-width: 600px;
+  position: relative;
+  margin: 1rem auto;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion .accordion-body h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.accordion .accordion-body p {
+  color: #3c3c3c;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  display: none;
+}
+
+.accordion .buttons {
+  position: absolute;
+  top: 20px;
+  left: -18px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.accordion .fa-times {
+  display: none;
+}
+
+.accordion.active .accordion-body h2 {
+  margin-bottom: 1.5rem;
+}
+
+.accordion.active .accordion-body p {
+  display: block;
+}
+
+.accordion.active .fa-chevron-down {
+  display: none;
+}
+
+.accordion.active .fa-times {
+  display: block;
+}
+
+/* .text.active .fa-chevron-down {
+  display: none;
+}
+
+.accordion .text.active .fa-times {
+  display: block;
+}
+
+.accordion .text.active {
+  display: block;
+  margin-top: 1rem;
+} */
